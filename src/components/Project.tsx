@@ -40,12 +40,12 @@ function Project() {
                 </div>
            </div>
             <div className="project">
-                <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><img src={controller} className="zoom icon-image" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><img src={controller} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><h2>Casual Game</h2></a>
                 <p>Casual.</p>
              </div>
             <div className="project">
-                <a href="https://github.com/krestianin/MyMalloc/tree/main" target="_blank" rel="noreferrer"><img src={floppydisk} className="zoom icon-image" alt="thumbnail"/></a>
+                <a href="https://github.com/krestianin/MyMalloc/tree/main" target="_blank" rel="noreferrer"><img src={floppydisk} className="zoom" alt="thumbnail"/></a>
                 <a href="https://github.com/krestianin/MyMalloc/tree/main" target="_blank" rel="noreferrer"><h2>Custom Memory Allocator</h2></a>
                 <p>This custom memory allocator is designed to efficiently manage memory allocation and deallocation requests.</p>
                   <div className="flex-chips">

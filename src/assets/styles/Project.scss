@@ -24,19 +24,13 @@
     border-radius: 5px;
     transition: transform .2s;
     margin: 0 auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
 }
   
 .zoom:hover {
     transform: scale(1.05);
-}
-
-/* images for projects (e.g., floppy disk) */
-.icon-image {
-    width: 800px;
-    height: 500px;
-    object-fit: contain;
-    display: block;
-    margin: 12px auto;
 }
 
 /* Tech stack chips under Projects */
