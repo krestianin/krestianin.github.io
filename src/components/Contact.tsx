@@ -5,8 +5,17 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
+import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
 
 function Contact() {
+
+  // Replace with your real contact info
+  const PRIMARY_EMAIL: string = 'ipa14@sfu.ca';
+  const SECONDARY_EMAIL: string = 'postolovcameron@gmail.com';
+  const PHONE_DISPLAY: string = '+1 (604) 655-9102';
+  const PHONE_TEL: string = '+16046559102';
 
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -54,7 +63,21 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <div className="contact-links" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+            <a href={`mailto:${PRIMARY_EMAIL}`} className="contact-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '.5rem' }}>
+              <EmailOutlinedIcon fontSize="small" />
+              <span>{PRIMARY_EMAIL}</span>
+            </a>
+            <a href={`mailto:${SECONDARY_EMAIL}`} className="contact-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '.5rem' }}>
+              <AlternateEmailOutlinedIcon fontSize="small" />
+              <span>{SECONDARY_EMAIL}</span>
+            </a>
+            <a href={`tel:${PHONE_TEL}`} className="contact-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '.5rem' }}>
+              <PhoneIphoneOutlinedIcon fontSize="small" />
+              <span>{PHONE_DISPLAY}</span>
+            </a>
+          </div>
+          {/* <p>Let's collaborate and make it happen!</p>
           <Box
             ref={form}
             component="form"
@@ -106,7 +129,7 @@ function Contact() {
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
               Send
             </Button>
-          </Box>
+          </Box> */}
         </div>
       </div>
     </div>

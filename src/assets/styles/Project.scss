@@ -30,6 +30,34 @@
     transform: scale(1.05);
 }
 
+/* images for projects (e.g., floppy disk) */
+.icon-image {
+    width: 800px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: 12px auto;
+}
+
+/* Tech stack chips under Projects */
+.tech-stack {
+    margin: 20px 0 30px;
+}
+
+.flex-chips {
+    line-height: 2;
+}
+
+.flex-chips .MuiChip-root {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.chip {
+    font-size: 0.8rem !important;
+    height: 25px !important;
+}
+
 @media screen {
     @media (max-width: 700px) {
         .projects-container {
