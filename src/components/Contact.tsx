@@ -1,10 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
+// import { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
 // import emailjs from '@emailjs/browser';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import TextField from '@mui/material/TextField';
+// import Box from '@mui/material/Box';
+// import Button from '@mui/material/Button';
+// import SendIcon from '@mui/icons-material/Send';
+// import TextField from '@mui/material/TextField';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
 import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
@@ -17,22 +18,22 @@ function Contact() {
   const PHONE_DISPLAY: string = '+1 (604) 655-9102';
   const PHONE_TEL: string = '+16046559102';
 
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  // const [name, setName] = useState<string>('');
+  // const [email, setEmail] = useState<string>('');
+  // const [message, setMessage] = useState<string>('');
 
-  const [nameError, setNameError] = useState<boolean>(false);
-  const [emailError, setEmailError] = useState<boolean>(false);
-  const [messageError, setMessageError] = useState<boolean>(false);
+  // const [nameError, setNameError] = useState<boolean>(false);
+  // const [emailError, setEmailError] = useState<boolean>(false);
+  // const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e: any) => {
-    e.preventDefault();
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
 
-    setNameError(name === '');
-    setEmailError(email === '');
-    setMessageError(message === '');
+  //   setNameError(name === '');
+  //   setEmailError(email === '');
+  //   setMessageError(message === '');
 
     /* Uncomment below if you want to enable the emailJS */
 
@@ -56,7 +57,7 @@ function Contact() {
     //   setEmail('');
     //   setMessage('');
     // }
-  };
+  // };
 
   return (
     <div id="contact">
