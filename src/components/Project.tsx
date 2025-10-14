@@ -10,6 +10,8 @@ function Project() {
    const labelsFirst = [
         'C#', 'Unity', 'Mirror', 'Shaders', 'GPU Instancing'
     ];
+    const labelscasual = [
+        'C#', 'Unity', 'NavMesh', 'Animator'];
     const labelsSecond = [
         'C', 'Memory Management', 'Data Structures', 'AVL Trees'
     ];
@@ -23,8 +25,8 @@ function Project() {
 
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={hex} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Horizon Expedition (in progress)</h2></a>
+                <a href="https://www.notion.so/28d3f70d3f7a80f19bdde6ecd7f54741" target="_blank" rel="noreferrer"><img src={hex} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.notion.so/28d3f70d3f7a80f19bdde6ecd7f54741" target="_blank" rel="noreferrer"><h2>Horizon Expedition (in progress)</h2></a>
                 <p>A networked voxel RPG where players form parties, explore procedurally generated maps, battle other players and mobs, and mine or build within a fully destructible world.</p>
                 <div className="flex-chips">
                     <span className="chip-title">Tech stack:</span>
@@ -34,9 +36,19 @@ function Project() {
                 </div>
            </div>
             <div className="project">
-                <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><img src={controller} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><h2>Casual Game</h2></a>
-                <p>Casual.</p>
+                <a href="https://ivanpostolov.itch.io/fight-vs-zombies" target="_blank" rel="noreferrer"><img src={controller} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://ivanpostolov.itch.io/fight-vs-zombies" target="_blank" rel="noreferrer"><h2>Guy vs. Zombies</h2></a>
+                <p>A third‑person zombie‑survival prototype where I implemented NavMesh/agent AI with lightweight custom obstacle avoidance 
+                    and off‑mesh traversal via a bespoke AgentLinkMover, a CharacterController‑based movement and camera rig, animation hooks, 
+                    health and melee combat, and ground‑aware resource spawning. Core loop: fight zombies, collect coins, and restore health at
+                    a base with a 1:5 coin‑to‑HP ratio.</p>
+                    <a href="https://github.com/krestianin/CasualGame" target="_blank" rel="noreferrer"><h3>GitHub link</h3></a>
+                <div className="flex-chips">
+                    <span className="chip-title">Tech stack:</span>
+                    {labelscasual.map((label, index) => (
+                        <Chip key={index} className='chip' label={label} />
+                    ))}
+                </div>
              </div>
             <div className="project">
                 <a href="https://github.com/krestianin/MyMalloc/tree/main" target="_blank" rel="noreferrer"><img src={floppydisk} className="zoom" alt="thumbnail"/></a>
