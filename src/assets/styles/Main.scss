@@ -2,6 +2,14 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.dark-mode .resume-btn {
+    color: white !important;
+}
+
+.light-mode .resume-btn {
+    color: #0d1116 !important;
+}
+
 .about-section {
     display: flex;
     gap: 30px;
@@ -40,6 +48,11 @@
         font-size: 1.5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+    }
+
+    .resume-btn {
+        margin-top: 14px;
+        border-color: currentColor !important;
     }
 
     h1 {
