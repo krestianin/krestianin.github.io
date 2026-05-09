@@ -18,7 +18,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/ivan-postolov-b2a342289" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Ivan Postolov</h1>
-          <p>C++ Software Developer | Gamedev Enthusiast</p>
+          <p>C++ Software Developer | Gamedev & AI Enthusiast</p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/krestianin" target="_blank" rel="noreferrer"><GitHubIcon/></a>
