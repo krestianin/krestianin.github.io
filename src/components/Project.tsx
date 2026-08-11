@@ -39,8 +39,8 @@ function Project() {
             <h2 className="section-title">Machine Learning</h2>
             <div className="projects-grid">
                 <div className="project">
-                    <a href="https://github.com/lunaS112/cmpt720_hybrid_hj" target="_blank" rel="noreferrer"><img src={ODP} className="zoom" alt="thumbnail"/></a>
-                    <a href="https://github.com/lunaS112/cmpt720_hybrid_hj" target="_blank" rel="noreferrer"><h2>Hybrid Hamilton–Jacobi Safety Filtering</h2></a>
+                    <a href="https://cmpt720-hybrid-hj.vercel.app/" target="_blank" rel="noreferrer"><img src={ODP} className="zoom" alt="thumbnail"/></a>
+                    <a href="https://cmpt720-hybrid-hj.vercel.app/" target="_blank" rel="noreferrer"><h2>Hybrid Hamilton–Jacobi Safety Filtering</h2></a>
                     <p>Neural-network-based safety filtering system for a 4D car-like robot navigation task. Uses Hamilton–Jacobi reachability data, OptimizedDP-generated value functions, and DeepReach-style neural PDE learning to predict unsafe robot states near obstacles.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
