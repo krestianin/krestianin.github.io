@@ -68,6 +68,23 @@
     height: 25px !important;
 }
 
+.paper-title:hover {
+    text-decoration: none !important;
+}
+
+.paper-venue {
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: -8px;
+}
+
+.pdf-btn {
+    display: block !important;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: currentColor !important;
+}
+
 @media screen {
     @media (max-width: 700px) {
         .projects-container {

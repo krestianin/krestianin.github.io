@@ -10,6 +10,7 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Project.scss';
 
 function Project() {
+
    const labelsFirst = [
         'C#', 'Unity', 'Mirror', 'Shaders', 'GPU Instancing'
     ];
@@ -27,6 +28,9 @@ function Project() {
     const labelsFourth = [
         'PyTorch', 'Robotics', 'Neural Safety Filtering', 'ROS2'
     ];
+    const labelsPaper = [
+        'HJ Reachability', 'DeepReach', 'Physics-Informed NNs', 'System Decomposition', 'Safe Control'
+    ];
     const labelMultiFusion = [
         'Deep Learning', 'Stable Diffusion', 'ControlNet', 'Neural Fusion'
     ];
@@ -36,12 +40,24 @@ function Project() {
         <h1>Personal Projects</h1>
 
         <div className="projects-section">
-            <h2 className="section-title">Machine Learning</h2>
+            <h2 className="section-title">Research</h2>
             <div className="projects-grid">
                 <div className="project">
+                    <h2 className="paper-title">Hybrid Hamilton–Jacobi Reachability for High-Dimensional Autonomous Systems via System Decomposition and Learning</h2>
+                    <p className="paper-venue">Paper · SFU MARS Lab · Submitted to L4DC 2026</p>
+                    <p>Hamilton–Jacobi reachability tells us from which states a system can stay safe, but full-state grids grow exponentially with dimension. We integrate system decomposition and teacher supervision into DeepReach: low-dimensional subsystems are solved on grids and combined into a teacher value function, whose supervision strength adapts to the gap between leading subsystem values (motivated by leaking-corner analysis). Evaluated on a 4D Dubins car, 6D spacecraft docking, and a 10D quadrotor, it improves value accuracy and closed-loop control over the DeepReach baseline.</p>
+                    <div className="flex-chips">
+                        <span className="chip-title">Topics:</span>
+                        {labelsPaper.map((label, index) => (
+                            <Chip key={index} className='chip' label={label} />
+                        ))}
+                    </div>
+                </div>
+                <div className="project">
                     <a href="https://cmpt720-hybrid-hj.vercel.app/" target="_blank" rel="noreferrer"><img src={ODP} className="zoom" alt="thumbnail"/></a>
-                    <a href="https://cmpt720-hybrid-hj.vercel.app/" target="_blank" rel="noreferrer"><h2>Hybrid Hamilton–Jacobi Safety Filtering</h2></a>
-                    <p>Neural-network-based safety filtering system for a 4D car-like robot navigation task. Uses Hamilton–Jacobi reachability data, OptimizedDP-generated value functions, and DeepReach-style neural PDE learning to predict unsafe robot states near obstacles.</p>
+                    <a href="https://cmpt720-hybrid-hj.vercel.app/" target="_blank" rel="noreferrer"><h2>Project Website: Hybrid HJ Safety Filtering</h2></a>
+                    <p className="paper-venue">Interactive companion site</p>
+                    <p>A hands-on walkthrough of the idea behind the paper, applied to a 4D car-like robot navigating around obstacles. </p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFourth.map((label, index) => (
@@ -49,6 +65,12 @@ function Project() {
                         ))}
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div className="projects-section">
+            <h2 className="section-title">Machine Learning</h2>
+            <div className="projects-grid">
                 <div className="project">
                     <a href="https://github.com/krestianin/Multi_control_fusion" target="_blank" rel="noreferrer"><img src={robotColumns} className="zoom" alt="thumbnail"/></a>
                     <a href="https://github.com/krestianin/Multi_control_fusion" target="_blank" rel="noreferrer"><h2>Multi-ControlNet Image Generation</h2></a>
@@ -132,8 +154,8 @@ function Project() {
                 </div>
             </div>
         </div>
-
     </div>
+
     );
 }
 

@@ -24,7 +24,7 @@ function Main() {
             <a href="https://www.linkedin.com/in/ivan-postolov-b2a342289" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Ivan Postolov</h1>
-          <p>C++ Software Developer | Gamedev & AI Enthusiast</p>
+          <p>Software Engineer | Machine Learning & Robotics</p>
           <Button
             variant="outlined"
             className="resume-btn"
